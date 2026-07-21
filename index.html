@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilsoldia | PRP — Plasma Rico en Plaquetas en Coyoacán, CDMX</title>
+  <meta name="description" content="Ilsoldia: tratamientos de Plasma Rico en Plaquetas (PRP) para dermatología, ortopedia y medicina estética. 100% autólogo, seguro y ambulatorio. Agenda por WhatsApp en Coyoacán, CDMX.">
+  <meta name="keywords" content="PRP, plasma rico en plaquetas, medicina regenerativa, Ilsoldia, Coyoacán, CDMX, dermatología, ortopedia, alopecia, rejuvenecimiento facial">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ilsoldia Laboratorio Clínico">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Ilsoldia | PRP — Plasma Rico en Plaquetas en Coyoacán, CDMX">
+  <meta property="og:description" content="Tratamientos de Plasma Rico en Plaquetas (PRP) para dermatología, ortopedia y medicina estética. 100% autólogo. Agenda por WhatsApp.">
+  <meta property="og:image"       content="imagenes/ilsoldia-logo.png">
+  <link rel="icon" type="image/png" href="imagenes/ilsoldia-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================================
+     LOADER — la gota se llena con el progreso real de carga
+     ============================================= -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-bg"></div>
+  <div class="loader-particles" id="loader-particles"></div>
+  <div class="loader-flash" aria-hidden="true"></div>
+
+  <div class="loader-cross-wrap">
+    <img src="imagenes/ilsoldia-icon-white.png" alt="" class="loader-logo-img">
+    <svg class="loader-ring-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(211,47,47,0.15)" stroke-width="1"/>
+      <circle class="loader-ring-arc" cx="60" cy="60" r="54" fill="none"
+        stroke="#C9A9DE" stroke-width="2" stroke-linecap="round" stroke-dasharray="85 254"/>
+    </svg>
+  </div>
+  <div class="loader-brand-text">
+    <span class="loader-brand-main">Ilsoldia</span>
+    <span class="loader-brand-sub">LABORATORIO CLÍNICO</span>
+  </div>
+  <div class="loader-progress-wrap">
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+      <div class="loader-progress-glow"></div>
+    </div>
+    <span class="loader-progress-label">Extrayendo precisión...</span>
+  </div>
+  <div class="loader-dots">
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+  </div>
+</div>
+
+
+<!-- =============================================
+     NAVBAR
+     ============================================= -->
+<header id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Ilsoldia — inicio">
+        <img src="imagenes/ilsoldia-logo.png" alt="Ilsoldia Laboratorio Clínico" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#prp">PRP</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#galeria">Instalaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-phone">
+          <small>Escríbenos ahora</small>
+          <a href="tel:+525566959724"><i class="fas fa-phone"></i> 55 6695 9724</a>
+        </div>
+        <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tratamientos%20de%20PRP." target="_blank" rel="noopener" class="btn-nav">
+          <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
+        </a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Fuera de <header> a propósito: el backdrop-filter del navbar crea un
+     containing block para hijos position:fixed y rompe este panel. -->
+<nav class="mobile-menu" id="mobile-menu">
+  <a href="#prp"><i class="fas fa-droplet"></i> ¿Qué es el PRP?</a>
+  <a href="#especialidades"><i class="fas fa-vial"></i> Especialidades</a>
+  <a href="#proceso"><i class="fas fa-route"></i> Proceso</a>
+  <a href="#galeria"><i class="fas fa-microscope"></i> Instalaciones</a>
+  <a href="#contacto"><i class="fas fa-location-dot"></i> Contacto</a>
+  <div class="mobile-menu-ctas">
+    <a href="tel:+525566959724" class="mobile-btn-call"><i class="fas fa-phone"></i> Llamar: 55 6695 9724</a>
+    <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tratamientos%20de%20PRP." target="_blank" rel="noopener" class="mobile-btn-wa"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</a>
+  </div>
+</nav>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="hero">
+
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-orb hero-orb-1" id="orb1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" id="orb2" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-dna" aria-hidden="true">
+    <svg viewBox="0 0 120 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <path class="hero-dna-strand-a" d="M10,0 C60,25 60,75 10,100 C-40,125 -40,175 10,200 C60,225 60,275 10,300 C-40,325 -40,375 10,400" />
+      <path class="hero-dna-strand-b" d="M110,0 C60,25 60,75 110,100 C160,125 160,175 110,200 C60,225 60,275 110,300 C160,325 160,375 110,400" />
+    </svg>
+  </div>
+
+  <div class="container hero-layout">
+
+    <div class="hero-copy">
+
+      <div class="hero-badge" id="hero-badge">
+        <div class="hero-badge-dot">
+          <span class="dot-core"></span>
+          <span class="dot-ring"></span>
+        </div>
+        <span>PRP · Medicina Regenerativa · Coyoacán, CDMX</span>
+      </div>
+
+      <h1 class="hero-title" id="hero-title" aria-label="Precisión Que Transforma Tus Resultados">
+        <span class="title-line" data-delay="0">
+          <span class="title-inner">Precisión Que</span>
+        </span>
+        <span class="title-line" data-delay="160">
+          <span class="title-inner highlight-gradient">Transforma</span>
+        </span>
+        <span class="title-line" data-delay="320">
+          <span class="title-inner">Tus Resultados.</span>
+        </span>
+      </h1>
+
+      <p class="hero-typewriter" id="hero-typewriter" aria-hidden="true">
+        <span class="hero-typewriter-label">PRP para</span>
+        <span class="hero-typewriter-text" id="typewriter-text"></span><span class="hero-typewriter-cursor">|</span>
+      </p>
+
+      <p class="hero-desc" id="hero-desc">
+        Elaboramos tratamientos de Plasma Rico en Plaquetas (PRP) con tu propia sangre: una alternativa regenerativa 100% autóloga para piel, articulaciones y cabello.
+      </p>
+
+      <div class="hero-ctas" id="hero-ctas">
+        <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20PRP." target="_blank" rel="noopener" class="btn-primary hero-btn-1" data-ripple>
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Agendar mi consulta</span>
+          <span class="btn-shimmer"></span>
+        </a>
+        <a href="tel:+525566959724" class="btn-secondary hero-btn-2">
+          <span class="btn-icon"><i class="fas fa-phone-volume"></i></span>
+          <span class="btn-label">Llamar ahora</span>
+        </a>
+      </div>
+
+      <div class="hero-trust" id="hero-trust">
+        <div class="hero-trust-item" data-trust-delay="0">
+          <i class="fas fa-check-circle"></i><span>100% autólogo</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="80">
+          <i class="fas fa-check-circle"></i><span>Procedimiento seguro</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="160">
+          <i class="fas fa-check-circle"></i><span>Ambulatorio</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-visual" id="hero-visual">
+      <div class="hero-img-frame" id="hero-img-frame">
+        <img src="https://images.pexels.com/photos/6627693/pexels-photo-6627693.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="Tubo de muestra de sangre siendo colocado en centrífuga para el procesamiento de Plasma Rico en Plaquetas (PRP)" loading="eager">
+        <div class="hero-img-overlay"></div>
+        <div class="hero-img-accent-v"></div>
+        <div class="hero-img-accent-h"></div>
+      </div>
+
+      <div class="hero-metric" id="hero-metric">
+        <div class="metric-item">
+          <i class="fas fa-shield-heart"></i>
+          <span class="metric-label">100% Autólogo</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <i class="fas fa-clock"></i>
+          <span class="metric-label">Ambulatorio</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <i class="fas fa-location-dot"></i>
+          <span class="metric-label">Coyoacán, CDMX</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-divider" aria-hidden="true">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M321,40c58-8,114-22,172-30,82-13,168-13,250,0C823,22,907,52,986,66c70,14,147,19,214,3V80H0V68C60,84,131,85,197,76Z" fill="#FCFBFE"></path>
+    </svg>
+  </div>
+</section>
+
+
+<!-- =============================================
+     TRUST BAR
+     ============================================= -->
+<section id="trust-bar">
+  <div class="container">
+    <div class="trust-card reveal">
+      <div class="trust-item">
+        <i class="fas fa-hand-holding-medical"></i>
+        <strong>Alivia el Dolor</strong>
+        <small>Reduce dolor e inflamación</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-seedling"></i>
+        <strong>Regeneración Natural</strong>
+        <small>Acelera la regeneración de tejidos</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-droplet"></i>
+        <strong>100% Autólogo</strong>
+        <small>Elaborado con tu propia sangre</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-shield-heart"></i>
+        <strong>Procedimiento Seguro</strong>
+        <small>Ambulatorio y de rápida recuperación</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ¿QUÉ ES EL PRP?
+     ============================================= -->
+<section id="prp">
+  <div class="events-orb-1"></div>
+  <div class="events-orb-2"></div>
+  <div class="container">
+    <div class="events-grid">
+      <div class="events-imgs single reveal-left">
+        <img src="https://images.pexels.com/photos/6629366/pexels-photo-6629366.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="Equipo de centrifugación para procesamiento de Plasma Rico en Plaquetas (PRP), mostrando el proceso científico del tratamiento" loading="lazy">
+      </div>
+      <div class="events-content reveal-right">
+        <span class="section-tag">La Ciencia Detrás del Tratamiento</span>
+        <h2>Tu cuerpo tiene el poder de regenerarse</h2>
+        <p>El Plasma Rico en Plaquetas (PRP) es una alternativa regenerativa elaborada a partir de tu propia sangre. Mediante centrifugación estandarizada concentramos los factores de crecimiento de tu plasma, listos para aplicarse en tu tratamiento.</p>
+        <ul class="events-list">
+          <li><i class="fas fa-check-circle"></i> 100% autólogo: elaborado con tu propia sangre</li>
+          <li><i class="fas fa-check-circle"></i> Alivia el dolor y la inflamación</li>
+          <li><i class="fas fa-check-circle"></i> Acelera la regeneración de tejidos</li>
+          <li><i class="fas fa-check-circle"></i> Procedimiento seguro, natural y ambulatorio</li>
+        </ul>
+        <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20tratamiento%20de%20PRP." target="_blank" rel="noopener" class="btn-events">Conoce tu tratamiento por WhatsApp <i class="fas fa-arrow-right"></i></a>
+
+        <div class="prp-protocol">
+          <p class="prp-protocol-label">Protocolo de Excelencia Ilsoldia</p>
+          <div class="prp-protocol-grid">
+            <div class="prp-protocol-item"><i class="fas fa-certificate"></i> Punto de recolección y procesamiento certificado</div>
+            <div class="prp-protocol-item"><i class="fas fa-truck-fast"></i> Entregas rápidas y seguras</div>
+            <div class="prp-protocol-item"><i class="fas fa-headset"></i> Asesoramiento técnico continuo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ESPECIALIDADES
+     ============================================= -->
+<section id="especialidades">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Especialidades</span>
+      <h2 class="section-title">Un mismo tratamiento, tres campos de acción</h2>
+      <p class="section-desc">Aplicamos PRP en tres áreas clínicas, siempre a partir de tu propia sangre.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card reveal">
+        <div class="why-card-img">
+          <img src="https://images.unsplash.com/photo-1746708810803-722593e53772?auto=format&fit=crop&w=900&q=80"
+               alt="Aplicación de inyección dermatológica facial, tratamiento de rejuvenecimiento con PRP" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-spa"></i></div>
+          <h3>Dermatología</h3>
+          <ul class="why-card-list">
+            <li><i class="fas fa-check"></i> Rejuvenecimiento facial y dérmico</li>
+            <li><i class="fas fa-check"></i> Eliminación de cicatrices y estrías</li>
+            <li><i class="fas fa-check"></i> Reducción de arrugas y líneas de expresión</li>
+            <li><i class="fas fa-check"></i> Mejora de elasticidad, firmeza y textura</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-card reveal delay-100">
+        <div class="why-card-img">
+          <img src="https://images.unsplash.com/photo-1746842419697-03234f5ff03e?auto=format&fit=crop&w=900&q=80"
+               alt="Especialista examinando la articulación de la rodilla para tratamiento ortopédico con PRP" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-bone"></i></div>
+          <h3>Ortopedia</h3>
+          <ul class="why-card-list">
+            <li><i class="fas fa-check"></i> Lesiones deportivas, esguinces y desgarres</li>
+            <li><i class="fas fa-check"></i> Tendinitis y lesiones de tendones</li>
+            <li><i class="fas fa-check"></i> Artrosis y desgaste articular</li>
+            <li><i class="fas fa-check"></i> Dolor en rodilla, hombro, tobillo y cadera</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="why-card reveal delay-200">
+        <div class="why-card-img">
+          <img src="https://images.unsplash.com/photo-1742280159636-3a06652ac9d9?auto=format&fit=crop&w=900&q=80"
+               alt="Inyección de PRP en el cuero cabelludo para tratamiento de alopecia y crecimiento capilar" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h3>Medicina Estética y Capilar</h3>
+          <ul class="why-card-list">
+            <li><i class="fas fa-check"></i> Crecimiento capilar y tratamiento de alopecia</li>
+            <li><i class="fas fa-check"></i> Tratamientos de regeneración tisular</li>
+            <li><i class="fas fa-check"></i> Contorno del cuerpo</li>
+            <li><i class="fas fa-check"></i> Aceleración de la cicatrización post-tratamiento</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROCESO — 3 pasos
+     ============================================= -->
+<section id="proceso">
+  <div class="container">
+    <div class="process-grid">
+
+      <div class="process-img-stack reveal-left">
+        <div class="process-img-main" data-parallax data-parallax-speed="0.08">
+          <img src="https://images.unsplash.com/photo-1639772823849-6efbd173043c?auto=format&fit=crop&w=1000&q=80"
+               alt="Especialista manejando con precisión una muestra de sangre para su procesamiento" loading="lazy">
+          <div class="process-img-badge">
+            <div class="badge-icon"><i class="fas fa-vial-circle-check"></i></div>
+            <div class="badge-text">
+              <p>Extracción Cuidadosa</p>
+              <p>Manejo higiénico de cada muestra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <span class="section-tag">Proceso Sencillo</span>
+        <h2 class="process-title">¿Cómo se aplica tu PRP?</h2>
+        <p class="process-intro">Tres pasos para el mismo procedimiento ambulatorio, de principio a fin.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h4>Consulta</h4>
+              <p>Nos cuentas tu caso por WhatsApp y te damos indicaciones para tu cita.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h4>Extracción y Centrifugado</h4>
+              <p>Se extrae una muestra de tu sangre y se centrifuga para concentrar el plasma rico en plaquetas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h4>Aplicación</h4>
+              <p>Tu PRP se aplica en la zona a tratar: un procedimiento ambulatorio y de rápida recuperación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     INSTALACIONES Y PROCESO
+     ============================================= -->
+<section id="galeria">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Instalaciones y Proceso</span>
+      <h2 class="section-title">Así trabajamos cada tratamiento</h2>
+      <p class="section-desc">Tecnología, protocolo certificado y resultados reales detrás de cada aplicación de PRP.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <div class="gallery-img">
+          <img src="imagenes/ilsoldia-centrifuga-sola.jpg"
+               alt="Equipo de centrifugación utilizado por Ilsoldia para procesar Plasma Rico en Plaquetas" loading="lazy">
+          <div class="gallery-img-overlay"></div>
+        </div>
+        <div class="gallery-info">
+          <span class="gallery-badge badge-a">Tecnología</span>
+          <h3>Equipo de Centrifugación</h3>
+          <p>Tecnología de vanguardia para una purificación óptima del plasma.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-img">
+          <img src="imagenes/ilsoldia-tecnica-cooler-2.jpg"
+               alt="Especialista de Ilsoldia procesando muestras con protocolo certificado de recolección" loading="lazy">
+          <div class="gallery-img-overlay" style="background:linear-gradient(180deg,transparent 20%,rgba(60,12,84,0.88) 100%);"></div>
+        </div>
+        <div class="gallery-info">
+          <span class="gallery-badge badge-b">Protocolo</span>
+          <h3>Recolección Certificada</h3>
+          <p>Punto de recolección y procesamiento certificado en cada muestra.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="gallery-img">
+          <img src="imagenes/ilsoldia-antes-despues.jpg"
+               alt="Resultado antes y después de un tratamiento de rejuvenecimiento facial con PRP en Ilsoldia" loading="lazy">
+          <div class="gallery-img-overlay"></div>
+        </div>
+        <div class="gallery-info">
+          <span class="gallery-badge badge-c">Resultados</span>
+          <h3>Resultados Visibles</h3>
+          <p>Rejuvenecimiento facial tras el tratamiento con PRP.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     COMPROMISO — contadores + cita
+     ============================================= -->
+<section id="compromiso">
+  <canvas id="stats-canvas" aria-hidden="true"></canvas>
+  <div class="stats-bg-img" aria-hidden="true" data-parallax data-parallax-speed="0.15">
+    <img src="https://images.pexels.com/photos/6627693/pexels-photo-6627693.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" loading="lazy">
+    <div class="stats-bg-overlay"></div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal" style="margin-bottom:48px;">
+      <span class="section-tag" style="color:#C9A9DE;">Nuestro Compromiso</span>
+      <h2 class="section-title" style="color:#fff;">Un protocolo pensado para tu confianza</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="100" data-suffix="%">0%</span></div>
+        <div class="stat-label">Autólogo</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="100" data-suffix="%">0%</span></div>
+        <div class="stat-label">Procedimiento seguro</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="100" data-suffix="%">0%</span></div>
+        <div class="stat-label">Asesoría personalizada</div>
+      </div>
+    </div>
+
+    <div class="why-banner reveal">
+      <div class="why-banner-content">
+        <i class="fas fa-quote-left why-banner-quote-icon"></i>
+        <p class="why-banner-text">
+          "Tu cuerpo tiene el poder de regenerarse. Nosotros te acompañamos con precisión y ciencia en cada paso."
+        </p>
+        <div class="why-banner-author">
+          <div class="why-banner-author-dot"></div>
+          <span>Equipo Ilsoldia · Laboratorio Clínico</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div style="margin-bottom:36px;text-align:center;">
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title" style="margin-bottom:0;">Resolvemos tus dudas</h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>¿Qué es el PRP (Plasma Rico en Plaquetas)?</span>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-body">
+            <p>Es un tratamiento regenerativo elaborado a partir de tu propia sangre, mediante un proceso de centrifugación que concentra los factores de crecimiento de tu plasma.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>¿Es seguro usar mi propia sangre?</span>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-body">
+            <p>Sí. Al ser un tratamiento 100% autólogo —elaborado con tu propia sangre— es una alternativa segura, natural y biocompatible.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>¿El procedimiento es doloroso o requiere hospitalización?</span>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-body">
+            <p>Es un procedimiento ambulatorio de rápida recuperación. Al contactarnos te daremos indicaciones específicas sobre tu tratamiento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>¿Para qué tratamientos se utiliza?</span>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-body">
+            <p>Se aplica en dermatología (rejuvenecimiento facial, cicatrices, estrías), ortopedia (lesiones articulares, tendinitis, artrosis) y medicina estética y capilar (alopecia, regeneración tisular).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>¿Cómo agendo mi cita?</span>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-body">
+            <p>Puedes escribirnos por WhatsApp o al correo ilsoldia0@gmail.com. Atendemos en Coyoacán, Ciudad de México.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CONTACTO
+     ============================================= -->
+<section id="contacto">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Contacto</span>
+      <h2 class="section-title">Agenda tu consulta de PRP</h2>
+      <p class="section-desc">Escríbenos y con gusto te atenderemos. Resolvemos tus dudas y te damos indicaciones claras para tu tratamiento.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal-left">
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>Correo</strong>
+            <a href="mailto:ilsoldia0@gmail.com">ilsoldia0@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <strong>Teléfono / WhatsApp</strong>
+            <a href="https://wa.me/5215566959724" target="_blank" rel="noopener">55 6695 9724</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fab fa-facebook-f"></i></div>
+          <div>
+            <strong>Facebook</strong>
+            <a href="https://www.facebook.com/search/top?q=Ilsoldia%20cl%C3%ADnico" target="_blank" rel="noopener">Ilsoldia clínico</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <strong>Instagram</strong>
+            <a href="https://www.instagram.com/explore/search/keyword/?q=Ilsoldia%20cl%C3%ADnico" target="_blank" rel="noopener">Ilsoldia clínico</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <strong>Ubicación</strong>
+            <span>Coyoacán, Ciudad de México</span>
+            <span class="contact-pending">Dirección exacta al confirmar tu cita</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Horario</strong>
+            <span class="contact-pending">Próximamente — escríbenos para conocer disponibilidad</span>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps?q=Coyoac%C3%A1n,+Ciudad+de+M%C3%A9xico&output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  title="Ubicación de Ilsoldia en Coyoacán, Ciudad de México"></iframe>
+          <span class="contact-map-tag"><i class="fas fa-location-dot"></i> Coyoacán, CDMX</span>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" id="contact-form">
+        <div class="form-row">
+          <label for="cf-name">Nombre</label>
+          <input type="text" id="cf-name" name="name" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-phone">Teléfono / WhatsApp</label>
+          <input type="tel" id="cf-phone" name="phone" placeholder="Tu número de contacto" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">¿Qué tratamiento te interesa?</label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="Dermatología, ortopedia o medicina estética" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary contact-form-submit" data-ripple>
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Enviar por WhatsApp</span>
+          <span class="btn-shimmer"></span>
+        </button>
+        <p class="contact-form-note"><i class="fas fa-lock"></i> Tu información se maneja de forma confidencial.</p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CTA FINAL
+     ============================================= -->
+<section id="cta">
+  <canvas id="cta-canvas" aria-hidden="true"></canvas>
+  <div class="cta-pattern"></div>
+
+  <div class="container" style="position:relative;z-index:3;">
+    <div class="cta-content">
+      <div class="cta-icon"><i class="fas fa-droplet"></i></div>
+      <h2>¿Listo para regenerarte con PRP?</h2>
+      <p>Contáctanos hoy mismo y con gusto te ayudamos a resolver tus dudas y agendar tu tratamiento.</p>
+      <div class="cta-btns">
+        <a href="tel:+525566959724" class="btn-cta-phone">
+          <i class="fas fa-phone" style="color:#5C2D80;"></i>
+          Llamar: 55 6695 9724
+        </a>
+        <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20un%20tratamiento%20de%20PRP." target="_blank" rel="noopener" class="btn-cta-wa">
+          <i class="fab fa-whatsapp" style="font-size:22px;"></i>
+          Enviar WhatsApp
+        </a>
+      </div>
+      <p class="cta-note"><i class="fas fa-shield-heart"></i> 100% autólogo · Procedimiento seguro y ambulatorio</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-icon">
+          <img src="imagenes/ilsoldia-logo-white.png" alt="Ilsoldia Laboratorio Clínico — Precisión que transforma resultados" class="footer-logo-img">
+        </div>
+        <p class="footer-bio">Tratamientos de Plasma Rico en Plaquetas (PRP) 100% autólogos para dermatología, ortopedia y medicina estética, con atención profesional en Coyoacán, CDMX.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/search/top?q=Ilsoldia%20cl%C3%ADnico" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/explore/search/keyword/?q=Ilsoldia%20cl%C3%ADnico" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5215566959724" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#prp">¿Qué es el PRP?</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#galeria">Instalaciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#especialidades">Dermatología</a></li>
+          <li><a href="#especialidades">Ortopedia</a></li>
+          <li><a href="#especialidades">Medicina Estética y Capilar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <div class="footer-contact-item">
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:16px;"></i>
+          <div><span class="main">55 6695 9724</span><span class="sub">WhatsApp / Teléfono</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><span class="main">ilsoldia0@gmail.com</span><span class="sub">Atención general</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-location-dot"></i>
+          <div><span class="main">Coyoacán, CDMX</span><span class="sub">Dirección exacta al confirmar tu cita</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ilsoldia Laboratorio Clínico. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Botones flotantes -->
+<div id="float-btns">
+  <a href="https://wa.me/5215566959724?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tratamientos%20de%20PRP." target="_blank" rel="noopener" class="float-wa" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-wa-label">Agendar por WhatsApp</span>
+  </a>
+  <a href="tel:+525566959724" class="float-phone" aria-label="Llamar ahora">
+    <i class="fas fa-phone"></i>
+    <span>55 6695 9724</span>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

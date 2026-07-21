@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Medical | Ambulancias Privadas Monterrey 24/7 - Urgencias y Traslados</title>
+  <meta name="description" content="Royal Medical - servicio de ambulancias privadas en Monterrey y área metropolitana. Urgencias, traslados programados, interhospitalarios, foráneos y cobertura de eventos. Paramédicos certificados disponibles las 24 horas.">
+  <meta name="keywords" content="royal medical, ambulancia monterrey, servicio de ambulancia mty, ambulancia privada monterrey, traslado médico, ambulancia 24 horas, atención prehospitalaria, urgencias médicas monterrey, paramédicos, soporte vital">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Royal Medical">
+  <!-- Permite que las imágenes externas carguen correctamente desde archivo local -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Royal Medical | Ambulancias Privadas Monterrey 24/7">
+  <meta property="og:description" content="Royal Medical - urgencias, traslados y cobertura de eventos con paramédicos certificados. Disponibles las 24 horas, 365 días en Monterrey y área metropolitana.">
+  <meta property="og:image"       content="imagenes/royal-medical-airport-transfer.jpg">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================================
+     LOADER PREMIUM
+     ============================================= -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-bg"></div>
+  <div class="loader-cross-wrap">
+    <img src="logo.png" alt="Royal Medical" class="loader-logo-img">
+    <svg class="loader-ring-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(211,47,47,0.15)" stroke-width="1"/>
+      <circle class="loader-ring-arc" cx="60" cy="60" r="54" fill="none"
+        stroke="#D32F2F" stroke-width="2" stroke-linecap="round" stroke-dasharray="85 254"/>
+    </svg>
+  </div>
+  <div class="loader-brand-text">
+    <span class="loader-brand-main">ROYAL MEDICAL</span>
+    <span class="loader-brand-sub">AMBULANCIAS · MONTERREY</span>
+  </div>
+  <div class="loader-progress-wrap">
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+      <div class="loader-progress-glow"></div>
+    </div>
+    <span class="loader-progress-label">Iniciando servicio...</span>
+  </div>
+  <div class="loader-dots">
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+  </div>
+</div>
+
+
+<!-- =============================================
+     NAVBAR
+     ============================================= -->
+<header id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="Royal Medical" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Cómo funciona</a></li>
+        <li><a href="#unidades">Nuestra flota</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-phone">
+          <small>Emergencias 24/7</small>
+          <a href="tel:+528129007862"><i class="fas fa-phone"></i> 81 2900 7862</a>
+        </div>
+        <a href="https://wa.me/528129007862" target="_blank" class="btn-nav">
+          <i class="fab fa-whatsapp"></i> Solicitar ahora
+        </a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#servicios"><i class="fas fa-briefcase-medical"></i> Servicios</a>
+    <a href="#proceso"><i class="fas fa-route"></i> Cómo funciona</a>
+    <a href="#unidades"><i class="fas fa-truck-medical"></i> Nuestra flota</a>
+    <a href="#nosotros"><i class="fas fa-star"></i> Nosotros</a>
+    <div class="mobile-menu-ctas">
+      <a href="tel:+528129007862" class="mobile-btn-call"><i class="fas fa-phone"></i> Llamar: 81 2900 7862</a>
+      <a href="https://wa.me/528129007862" target="_blank" class="mobile-btn-wa"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- =============================================
+     HERO — SPLIT LAYOUT (copy left | visual right)
+     ============================================= -->
+<section id="hero">
+
+  <!-- Canvas partículas -->
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- Fondo oscuro -->
+  <div class="hero-bg-layer" aria-hidden="true">
+    <img src="imagenes/royal-medical-hospital-er-night.jpg"
+         alt="" loading="eager" fetchpriority="high">
+    <div class="hero-bg-overlay"></div>
+  </div>
+
+  <!-- Orbes de luz -->
+  <div class="hero-orb hero-orb-1" id="orb1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" id="orb2" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <!-- Línea EKG / latido cardíaco -->
+  <div class="hero-ekg" aria-hidden="true">
+    <svg viewBox="0 0 1200 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="hero-ekg-path" d="M -60,32 L 175,32 L 185,26 L 195,32 L 200,32 L 204,40 L 208,4 L 212,60 L 216,32 L 230,32 L 240,22 L 252,32 L 470,32 L 480,26 L 490,32 L 494,32 L 498,40 L 502,4 L 506,60 L 510,32 L 524,32 L 534,22 L 546,32 L 760,32 L 770,26 L 780,32 L 784,32 L 788,40 L 792,4 L 796,60 L 800,32 L 814,32 L 824,22 L 836,32 L 1260,32"/>
+    </svg>
+  </div>
+
+  <div class="container hero-layout">
+
+    <!-- Columna izquierda: copy -->
+    <div class="hero-copy">
+
+      <div class="hero-badge" id="hero-badge">
+        <div class="hero-badge-dot">
+          <span class="dot-core"></span>
+          <span class="dot-ring"></span>
+        </div>
+        <span>Servicio disponible 24 horas · Monterrey y área metropolitana</span>
+      </div>
+
+      <h1 class="hero-title" id="hero-title" aria-label="Tu Emergencia, Nuestra Prioridad Absoluta">
+        <span class="title-line" data-delay="0">
+          <span class="title-inner">Tu Emergencia,</span>
+        </span>
+        <span class="title-line" data-delay="120">
+          <span class="title-inner highlight-gradient">Nuestra Prioridad</span>
+        </span>
+        <span class="title-line" data-delay="240">
+          <span class="title-inner">Absoluta.</span>
+        </span>
+      </h1>
+
+      <p class="hero-desc" id="hero-desc">
+        Royal Medical: paramédicos certificados y unidades equipadas listas las 24 horas en Monterrey para emergencias, traslados y cobertura de eventos.
+      </p>
+
+      <div class="hero-ctas" id="hero-ctas">
+        <a href="https://wa.me/528129007862" target="_blank" class="btn-primary hero-btn-1" data-ripple>
+          <span class="btn-icon"><i class="fas fa-headset"></i></span>
+          <span class="btn-label">Solicitar servicio ahora</span>
+          <span class="btn-shimmer"></span>
+        </a>
+        <a href="tel:+528129007862" class="btn-secondary hero-btn-2">
+          <span class="btn-icon"><i class="fas fa-phone-volume"></i></span>
+          <span class="btn-label">Llamar ahora</span>
+        </a>
+      </div>
+
+      <div class="hero-trust" id="hero-trust">
+        <div class="hero-trust-item" data-trust-delay="0">
+          <i class="fas fa-check-circle"></i><span>Atención inmediata 24/7</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="80">
+          <i class="fas fa-check-circle"></i><span>Personal certificado</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="160">
+          <i class="fas fa-check-circle"></i><span>Equipo especializado</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="240">
+          <i class="fas fa-check-circle"></i><span>Rápidos y confiables</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Columna derecha: visual -->
+    <div class="hero-visual" id="hero-visual">
+      <div class="hero-img-frame" id="hero-img-frame">
+        <img src="imagenes/royal-medical-airport-transfer.jpg"
+             alt="Ambulancia Royal Medical realizando un traslado aeromédico en pista de aeropuerto" loading="eager">
+        <div class="hero-img-overlay"></div>
+        <div class="hero-img-accent-v"></div>
+        <div class="hero-img-accent-h"></div>
+      </div>
+
+      <div class="hero-metric" id="hero-metric">
+        <div class="metric-item">
+          <span class="metric-num">+5,000</span>
+          <span class="metric-label">Servicios</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">24/7</span>
+          <span class="metric-label">Despacho</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">98%</span>
+          <span class="metric-label">Satisfacción</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">MTY</span>
+          <span class="metric-label">Y área metro.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Divisor -->
+  <div class="hero-divider" aria-hidden="true">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M321,40c58-8,114-22,172-30,82-13,168-13,250,0C823,22,907,52,986,66c70,14,147,19,214,3V80H0V68C60,84,131,85,197,76Z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
+</section>
+
+
+<!-- =============================================
+     TRUST BAR
+     ============================================= -->
+<section id="trust-bar">
+  <div class="container">
+    <div class="trust-card reveal">
+      <div class="trust-item">
+        <i class="fas fa-clock"></i>
+        <strong>Atención Inmediata 24/7</strong>
+        <small>Disponibles día y noche</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-user-nurse"></i>
+        <strong>Equipo Profesional Certificado</strong>
+        <small>Personal altamente capacitado</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-shield-heart"></i>
+        <strong>Seguridad Garantizada Siempre</strong>
+        <small>Protocolos estrictos</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-heart"></i>
+        <strong>Trato Humano y Cálido</strong>
+        <small>Tu salud, nuestra prioridad</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     SERVICES — Con imágenes reales
+     ============================================= -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestros Servicios</span>
+      <h2 class="section-title">Soluciones integrales en atención prehospitalaria</h2>
+      <p class="section-desc">Contamos con la experiencia, el personal y el equipo para responder ante cualquier necesidad médica, desde una emergencia hasta un traslado programado.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Servicio 1 — Emergencias 24/7 -->
+      <div class="service-card reveal">
+        <div class="service-card-img">
+          <img src="imagenes/royal-medical-units-street-traffic.jpg"
+               alt="Ambulancias Royal Medical respondiendo una emergencia en las calles de Monterrey" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge">24/7</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-red"><i class="fas fa-truck-fast"></i></div>
+          <h3>Servicio de Urgencias</h3>
+          <p>Atención inmediata ante cualquier emergencia médica con unidades de soporte vital básico y avanzado. Cada segundo importa.</p>
+          <span class="service-tag">Urgente · Inmediato 24/7</span>
+        </div>
+      </div>
+
+      <!-- Servicio 2 — Traslados Programados -->
+      <div class="service-card reveal delay-100">
+        <div class="service-card-img">
+          <img src="imagenes/royal-medical-hospital-transfer-unit.jpg"
+               alt="Unidad Royal Medical de traslados ambulatorios en la entrada de urgencias de un hospital" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(25,118,210,0.9);">Programado</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-blue"><i class="fas fa-calendar-check"></i></div>
+          <h3>Traslados con Oxígeno</h3>
+          <p>Traslados seguros con equipo especializado de oxigenoterapia para pacientes que requieren soporte respiratorio continuo.</p>
+          <span class="service-tag">Especializado · Seguro</span>
+        </div>
+      </div>
+
+      <!-- Servicio 3 — Traslado Interhospitalario -->
+      <div class="service-card reveal delay-200">
+        <div class="service-card-img">
+          <img src="imagenes/royal-medical-unit-16-evening.jpg"
+               alt="Ambulancia Royal Medical lista para traslado interhospitalario" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(10,37,64,0.9);">Hospitales</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-navy"><i class="fas fa-hospital"></i></div>
+          <h3>Terapia Intensiva e Intermedia</h3>
+          <p>Monitoreo y cuidados avanzados durante el traslado con equipo de terapia intensiva móvil para pacientes críticos.</p>
+          <span class="service-tag">Monitorizado · Avanzado</span>
+        </div>
+      </div>
+
+      <!-- Servicio 4 — Traslados Foráneos -->
+      <div class="service-card reveal delay-300">
+        <div class="service-card-img">
+          <img src="imagenes/royal-medical-street-cerro-silla.jpg"
+               alt="Ambulancia Royal Medical circulando por Monterrey rumbo a un traslado foráneo" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(25,118,210,0.85);">Foráneo</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-blue"><i class="fas fa-road"></i></div>
+          <h3>Traslados Foráneos</h3>
+          <p>Viajes seguros a cualquier destino. Traslados monitorizados a otras ciudades y estados con unidades preparadas para largo recorrido.</p>
+          <span class="service-tag">Larga distancia · Monitoreado</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROCESS — Con imagen real mejorada
+     ============================================= -->
+<section id="proceso">
+  <div class="container">
+    <div class="process-grid">
+
+      <!-- Imagen principal con stack de fotos -->
+      <div class="process-img-stack reveal-left">
+        <!-- Imagen principal -->
+        <div class="process-img-main">
+          <img src="imagenes/royal-medical-intersection-mountain.jpg"
+               alt="Ambulancia Royal Medical circulando por Monterrey con el Cerro de la Silla al fondo" loading="lazy">
+          <div class="process-img-badge">
+            <div class="badge-icon"><i class="fas fa-headset"></i></div>
+            <div class="badge-text">
+              <p>Central de Despacho Activa</p>
+              <p>Personal entrenado listo 24 horas</p>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen secundaria flotante -->
+        <div class="process-img-float">
+          <img src="imagenes/royal-medical-unit-16-branding.jpg"
+               alt="Ambulancia Royal Medical lista para servicio" loading="lazy">
+          <div class="process-img-float-label">
+            <i class="fas fa-check-circle" style="color:#4ade80;"></i>
+            Unidad disponible
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasos -->
+      <div class="reveal-right">
+        <span class="section-tag">Proceso Sencillo</span>
+        <h2 class="process-title">¿Cómo solicitar nuestro servicio?</h2>
+        <p class="process-intro">Entendemos que el tiempo es vital. Hemos optimizado cada paso para darte atención de la forma más rápida y sin complicaciones posible.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Contáctanos</h4>
+              <p>Llama a nuestra línea de emergencia directa o envíanos un mensaje por WhatsApp en cualquier momento.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Indica Ubicación y Situación</h4>
+              <p>Nuestro despachador certificado tomará tu ubicación exacta, datos del paciente y condición médica.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Despacho Inmediato</h4>
+              <p>Asignamos la unidad más cercana y el personal médico idóneo según el tipo de servicio requerido.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Atención y Traslado Seguro</h4>
+              <p>Llegamos, estabilizamos si es necesario y realizamos el traslado con monitoreo constante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FLEET / UNITS — Imágenes reales
+     ============================================= -->
+<section id="unidades">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestra Flota</span>
+      <h2 class="section-title">Unidades listas para cualquier emergencia</h2>
+      <p class="section-desc">Ambulancias de modelo reciente, equipadas con tecnología médica de vanguardia y sometidas a estrictos protocolos de mantenimiento e higiene.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="fleet-grid">
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="imagenes/royal-medical-unit-12-field.jpg"
+               alt="Ambulancia básica Royal Medical para traslados programados" loading="lazy">
+          <div class="fleet-img-overlay"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-red">Traslados</span>
+          <h3>Ambulancias Básicas</h3>
+          <p>Ideales para traslados programados, altas hospitalarias y acompañamiento médico seguro.</p>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="imagenes/royal-medical-stadium-coverage.jpg"
+               alt="Ambulancia Royal Medical de soporte vital avanzado en cobertura de estadio" loading="lazy">
+          <div class="fleet-img-overlay" style="background:linear-gradient(180deg,transparent 20%,rgba(180,20,20,0.88) 100%);"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-white">Urgencias</span>
+          <h3>Soporte Vital Avanzado</h3>
+          <p>Equipadas como terapia intensiva móvil para el manejo de pacientes críticos.</p>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="imagenes/royal-medical-unit-16-branding.jpg"
+               alt="Unidad Royal Medical equipada y lista para despacho" loading="lazy" style="object-position:center 35%;">
+          <div class="fleet-img-overlay"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-blue">Tecnología</span>
+          <h3>Equipamiento Médico</h3>
+          <p>Monitores cardíacos, desfibriladores, ventiladores y medicamentos de emergencia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     STATS — Con imagen de fondo real
+     ============================================= -->
+<section id="stats">
+  <!-- Imagen de fondo -->
+  <div class="stats-bg-img" aria-hidden="true">
+    <img src="imagenes/royal-medical-street-cerro-silla.jpg"
+         alt="" loading="lazy">
+    <div class="stats-bg-overlay"></div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal" style="margin-bottom:48px;">
+      <span class="section-tag" style="color:#EF9A9A;">Nuestros Números</span>
+      <h2 class="section-title" style="color:#fff;">La confianza de Monterrey respalda nuestro servicio</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="5000" data-suffix="+">0+</span></div>
+        <div class="stat-label">Servicios realizados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="365" data-suffix=" días">0 días</span></div>
+        <div class="stat-label">Disponibles al año</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="15" data-suffix="+ unidades">0+ unidades</span></div>
+        <div class="stat-label">En nuestra flota</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="98" data-suffix="%">0%</span></div>
+        <div class="stat-label">Clientes satisfechos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     EVENTS / CORPORATE
+     ============================================= -->
+<section id="eventos">
+  <div class="events-orb-1"></div>
+  <div class="events-orb-2"></div>
+  <div class="container">
+    <div class="events-grid">
+      <div class="events-imgs reveal-left">
+        <img src="imagenes/royal-medical-event-coverage-night.jpg"
+             alt="Ambulancia Royal Medical brindando guardia médica en un evento nocturno" loading="lazy">
+        <img src="imagenes/royal-medical-unit-12-stadium-day.jpg"
+             alt="Ambulancia Royal Medical en cobertura médica de un estadio" loading="lazy" style="object-position:center bottom;">
+      </div>
+      <div class="events-content reveal-right">
+        <span class="section-tag">Protección Empresarial</span>
+        <h2>Cobertura Médica para Eventos y Empresas</h2>
+        <p>Brindamos respaldo médico prehospitalario para garantizar la seguridad de tus colaboradores y asistentes. Prevenimos riesgos y actuamos de forma inmediata ante cualquier eventualidad.</p>
+        <ul class="events-list">
+          <li><i class="fas fa-check-circle"></i> Eventos deportivos, conciertos y festivales</li>
+          <li><i class="fas fa-check-circle"></i> Obras de construcción y plantas industriales</li>
+          <li><i class="fas fa-check-circle"></i> Escuelas, universidades y centros educativos</li>
+          <li><i class="fas fa-check-circle"></i> Eventos corporativos, congresos y convenciones</li>
+        </ul>
+        <a href="#cta" class="btn-events">Cotizar cobertura <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     WHY US — Con imágenes reales en las tarjetas
+     ============================================= -->
+<section id="nosotros">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Por qué elegirnos</span>
+      <h2 class="section-title">La seguridad de estar en las mejores manos</h2>
+      <p class="section-desc">Nuestro compromiso es salvaguardar la vida y salud de cada paciente mediante un servicio ético, rápido y altamente profesional.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="why-grid">
+
+      <!-- Trato Humano -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="imagenes/royal-medical-team-monterrey.jpg"
+               alt="Paramédico de Royal Medical brindando atención humana y profesional" loading="lazy" style="object-position:center top;">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Trato Humano</h3>
+          <p>Entendemos la vulnerabilidad de una emergencia. Brindamos empatía, respeto y contención emocional al paciente y sus familiares en todo momento.</p>
+        </div>
+      </div>
+
+      <!-- Equipo Moderno -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="imagenes/royal-medical-stadium-coverage.jpg"
+               alt="Ambulancia Royal Medical con equipamiento médico de vanguardia" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-stethoscope"></i></div>
+          <h3>Equipo de Vanguardia</h3>
+          <p>Nuestras ambulancias cumplen con normativas estrictas y están equipadas con instrumental biomédico de última generación para todo tipo de situaciones.</p>
+        </div>
+      </div>
+
+      <!-- Seguridad Total -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="imagenes/royal-medical-unit-12-field.jpg"
+               alt="Ambulancia Royal Medical con protocolos estrictos de seguridad y traslado" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-shield-heart"></i></div>
+          <h3>Seguridad Total</h3>
+          <p>Protocolos estrictos de higiene, conducción segura y manejo clínico certificado para garantizar traslados sin contratiempos de principio a fin.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja extra con imagen — testimonio visual -->
+    <div class="why-banner reveal">
+      <div class="why-banner-img">
+        <img src="imagenes/royal-medical-airport-transfer.jpg"
+             alt="Ambulancia Royal Medical lista para responder ante cualquier emergencia" loading="lazy">
+        <div class="why-banner-overlay"></div>
+      </div>
+      <div class="why-banner-content">
+        <i class="fas fa-quote-left why-banner-quote-icon"></i>
+        <p class="why-banner-text">
+          "En una emergencia, cada segundo cuenta. Nuestro equipo está entrenado para actuar con precisión, rapidez y la máxima atención humana cuando más nos necesitas."
+        </p>
+        <div class="why-banner-author">
+          <div class="why-banner-author-dot"></div>
+          <span>Equipo Médico Prehospitalario - Royal Medical</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section id="faq">
+  <div class="container">
+    <!-- Intro con imagen lateral -->
+    <div class="faq-layout">
+
+      <!-- Imagen lateral -->
+      <div class="faq-img-col reveal-left">
+        <div class="faq-img-wrap">
+          <img src="imagenes/royal-medical-hospital-er-night.jpg"
+               alt="Ambulancia Royal Medical disponible las 24 horas para atender llamadas de emergencia" loading="lazy">
+          <div class="faq-img-badge">
+            <i class="fas fa-phone-volume" style="color:#D32F2F;font-size:20px;"></i>
+            <div>
+              <strong>81 2900 7862</strong>
+              <span>Línea directa 24/7</span>
+              <span style="display:block;margin-top:2px;">Oficina: 81 3092 2903</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preguntas -->
+      <div class="faq-questions-col reveal-right">
+        <div style="margin-bottom:36px;">
+          <span class="section-tag">Preguntas Frecuentes</span>
+          <h2 class="section-title" style="text-align:left;margin-bottom:0;">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿El servicio está disponible las 24 horas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí, nuestra central de despacho y nuestras unidades operan los 365 días del año, las 24 horas del día. Siempre habrá alguien disponible para atender tu llamada y enviar una unidad de forma inmediata.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Realizan traslados programados para citas médicas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Por supuesto. Brindamos servicio de traslado redondo para pacientes que requieren hemodiálisis, terapias de rehabilitación, citas de especialidad o estudios de imagen, garantizando comodidad y puntualidad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Qué información necesito proporcionar al llamar?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Para agilizar el servicio te pediremos: ubicación exacta con referencias, motivo de la llamada o síntomas del paciente, edad aproximada y un número de contacto alterno. Con esos datos despachamos la unidad de inmediato.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Pueden trasladar pacientes fuera de la ciudad?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí, contamos con servicio de traslados foráneos. Nuestras unidades están preparadas mecánicamente y equipadas médicamente para viajes largos, garantizando la seguridad y monitoreo del paciente durante todo el trayecto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Ofrecen cobertura médica para eventos o empresas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí. Brindamos servicio de guardia médica con ambulancia y paramédicos para eventos deportivos, corporativos, construcciones, escuelas y más. Contáctanos para cotizar la cobertura según el tipo y tamaño de tu evento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FINAL CTA — Con imagen de fondo
+     ============================================= -->
+<section id="cta">
+  <div class="cta-pattern"></div>
+  <!-- Imagen de fondo semi-transparente -->
+  <div class="cta-bg-img" aria-hidden="true">
+    <img src="imagenes/royal-medical-units-street-traffic.jpg"
+         alt="" loading="lazy">
+    <div class="cta-bg-overlay"></div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:3;">
+    <div class="cta-content">
+      <div class="cta-icon"><i class="fas fa-phone-volume"></i></div>
+      <h2>¿Necesitas una ambulancia ahora mismo?</h2>
+      <p>No pierdas tiempo. Contáctanos de inmediato y recibe atención rápida para emergencias, traslados médicos o servicios programados.</p>
+      <div class="cta-btns">
+        <a href="tel:+528129007862" class="btn-cta-phone">
+          <i class="fas fa-phone" style="color:#D32F2F;"></i>
+          Llamar: 81 2900 7862
+        </a>
+        <a href="https://wa.me/528129007862" target="_blank" class="btn-cta-wa">
+          <i class="fab fa-whatsapp" style="font-size:22px;"></i>
+          Enviar WhatsApp
+        </a>
+      </div>
+      <p class="cta-note"><i class="fas fa-clock"></i> Central de despacho activa las 24 horas · Respuesta inmediata garantizada</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-icon">
+          <div class="icon"><i class="fas fa-truck-medical"></i></div>
+          <div><strong>ROYAL <span>MEDICAL</span></strong></div>
+        </div>
+        <p class="footer-bio">Royal Medical - servicio profesional de ambulancias privadas y traslados seguros en Monterrey y su área metropolitana. Disponibles los 365 días del año, las 24 horas del día, para proteger lo más valioso: la vida.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/19LB7jq66v/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/528129007862" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#servicios">Nuestros Servicios</a></li>
+          <li><a href="#proceso">Cómo funciona</a></li>
+          <li><a href="#unidades">Nuestra Flota</a></li>
+          <li><a href="#nosotros">Por qué elegirnos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Emergencias 24/7</a></li>
+          <li><a href="#servicios">Traslados Programados</a></li>
+          <li><a href="#servicios">Traslados Foráneos</a></li>
+          <li><a href="#eventos">Cobertura de Eventos</a></li>
+          <li><a href="#eventos">Servicio Corporativo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <div><span class="main">81 2900 7862</span><span class="sub">Línea de emergencia 24/7</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <div><span class="main">81 3092 2903</span><span class="sub">Línea de oficina</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:16px;"></i>
+          <div><span class="main">81 2900 7862</span><span class="sub">WhatsApp 24/7</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><span class="main">ambulancias.royal.medical@gmail.com</span><span class="sub">Atención general</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-location-dot"></i>
+          <div><span class="main">Monterrey, Nuevo León</span><span class="sub">Cobertura Monterrey y Área Metropolitana</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Royal Medical. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Botones flotantes -->
+<div id="float-btns">
+  <a href="https://wa.me/528129007862" target="_blank" class="float-wa" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-wa-label">Solicitar por WhatsApp</span>
+  </a>
+  <a href="tel:+528129007862" class="float-phone" aria-label="Llamar ahora">
+    <i class="fas fa-phone"></i>
+    <span>81 2900 7862</span>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
